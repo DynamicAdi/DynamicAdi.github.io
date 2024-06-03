@@ -1,9 +1,13 @@
 import React from "react";
 import { useTheme } from "../common/ThemeProvider";
 import { PiDownloadLight, PiEyesLight } from "react-icons/pi";
-import Boxes from "../core/boxes";
-import About from "../core/About";
-import Testmonials from "../core/Testmonials";
+import Boxes from "../core/Home/boxes";
+import About from "../core/Home/About";
+import Testmonials from "../core/Home/Testmonials";
+
+
+
+
 
 function Home() {
   const { isDarkMode } = useTheme();
@@ -17,26 +21,18 @@ function Home() {
       </div>
       <div className={`flex w-full h-[45%] gap-3 lg:flex-row flex-col-reverse`}>
         <Testmonials />
-        <div className={`flex lg:w-1/2 w-full h-full gap-3`}>
-          <div
-            className={`sideway lg:w-4/5 flex-col flex justify-start items-center gap-3 w-full`}
-          >
+        <div className="flex lg:w-2/3 w-full lg:h-full h-[180%] gap-3 lg:flex-row flex-col">
+          <div className="lg:w-full w-full h-full">
             <div
-              className={`flex w-full h-1/2 lg:h-[60%] ${
+              className={`flex w-full h-full ${
                 isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
               }  rounded-2xl`}
-            ></div>
-            <div
-              className={`flex w-full h-1/2 lg:h-[40%] ${
-                isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
-              }  rounded-2xl`}
-            ></div>
+            >
+            </div>
           </div>
-          <div
-            className={`flex w-1/2 h-full rounded-2xl flex-col justify-between items-center gap-3`}
-          >
+          <div className="flex lg:w-1/3 w-full lg:h-full h-1/2 gap-3 lg:flex-col">
             <div
-              className={`cursor-pointer hover:text-white hover:bg-purple-600  w-full h-1/2 rounded-xl flex flex-col justify-center items-center ${
+              className={`cursor-pointer hover:text-white hover:bg-purple-600 w-full lg:h-1/2 h-full rounded-xl flex flex-col justify-center items-center ${
                 isDarkMode
                   ? "text-white bg-foreground-dark"
                   : "text-black bg-gray-300"
@@ -46,7 +42,7 @@ function Home() {
               <h2 className={`font-source font-medium text-2xl `}>View CV</h2>
             </div>
             <div
-              className={`cursor-pointer hover:text-white hover:bg-green-500 w-full h-1/2 rounded-xl flex flex-col justify-center items-center ${
+              className={`cursor-pointer hover:text-white hover:bg-green-500 w-full lg:h-1/2 h-full rounded-xl flex flex-col justify-center items-center ${
                 isDarkMode
                   ? "text-white bg-foreground-dark"
                   : "text-black bg-gray-300"
@@ -56,7 +52,8 @@ function Home() {
               <h2 className={`font-source font-medium text-2xl `}>
                 Download CV
               </h2>
-            </div>
+
+          </div>
           </div>
         </div>
       </div>

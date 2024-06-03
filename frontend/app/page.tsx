@@ -8,9 +8,9 @@ import { inter, source, local } from "@/public/utils/fonts";
 
 
 export default function Home() {
-  const {isDarkMode, toggleTheme} = useTheme();
+  const {isDarkMode} = useTheme();
   return (
-    <main className={`w-screen lg:h-screen md:h-screen h-[140vh] ${inter.variable} ${source.variable} ${local.variable} ${isDarkMode ? "dark:bg-dark" : "bg-light"} p-4 flex justify-center items-center flex-col gap-4`}>
+    <main className={`w-screen lg:h-screen md:h-screen h-[260vh] ${inter.variable} ${source.variable} ${local.variable} ${isDarkMode ? "dark:bg-dark" : "bg-light"} p-4 flex justify-center items-center flex-col gap-4`}>
     <Navbar />
   <div className="w-full h-full mt-6 lg:mt-0 flex justify-between items-end gap-3 flex-col lg:flex-row">
     <Sidepane />
