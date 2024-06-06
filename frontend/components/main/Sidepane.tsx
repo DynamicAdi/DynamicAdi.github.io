@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import { useTheme } from '../common/ThemeProvider';
 import image from "@/public/me.jpg";
-import { PiCoffeeLight, PiDatabaseLight, PiBookLight,  PiAtLight, PiPhoneLight} from 'react-icons/pi';
+import { PiCoffeeLight, PiDatabaseLight, PiBookLight, PiPhoneLight, PiHashLight} from 'react-icons/pi';
 
 function Sidepane() {
     const {isDarkMode} = useTheme();
   const tabs = [
     {name: "Home", color: "bg-orange-400", icon: PiCoffeeLight},
     {name: "Projects", color: "bg-purple-600", icon: PiDatabaseLight},
+    {name: "Skills", color: "bg-sky-400", icon: PiHashLight},
     {name: "Blogs", color: "bg-yellow-300", icon: PiBookLight},
-    {name: "Services", color: "bg-sky-400", icon: PiAtLight},
     {name: "Contact", color: "bg-teal-400", icon: PiPhoneLight},
   ]
   const[opened, setOpen] = useState(tabs[0].name);

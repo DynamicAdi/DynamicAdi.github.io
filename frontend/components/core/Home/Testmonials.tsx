@@ -18,7 +18,7 @@ function Testmonials() {
 
     return (
     <div
-    className={`lg:w-1/2 w-full lg:h-full h-[40rem] p-3 ${
+    className={`lg:w-2/4 w-full lg:h-full h-[30rem] p-3 ${
       isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
     }  rounded-2xl overflow-hidden relative`}>
 
