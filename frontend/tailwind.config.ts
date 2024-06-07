@@ -21,7 +21,7 @@ const config: Config = {
       fontFamily: {
         source: ['var(--source-sans)'],
         inter: ['var(--inter)'],
-        local: ['var(--helvetica)'],
+        local: ['var(--dm-sans)'],
       },
       transitionTimingFunction: {
         "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
