@@ -27,8 +27,12 @@
 } */
 
 @layer utilities {
+  * {
+    scrollbar-width:none;
+  }
   body {
     cursor: default;
+    overflow: hidden;
   }
   .text-balance {
     text-wrap: balance;

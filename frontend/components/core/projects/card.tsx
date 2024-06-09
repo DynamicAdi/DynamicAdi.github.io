@@ -1,8 +1,9 @@
 import { useTheme } from '@/components/common/ThemeProvider'
 import React from 'react'
+import pic from '@/public/demopic.jpg';
+import {RxGithubLogo, RxEyeOpen} from "react-icons/rx";
 
-
-function Card({title, imgLink, name}: {
+function SkillsCard({title, imgLink, name}: {
     title: string,
     imgLink: string,
     name: string,
@@ -19,4 +20,32 @@ function Card({title, imgLink, name}: {
   )
 }
 
-export default Card
+
+function ProjectsCard() {
+  const {isDarkMode} = useTheme();
+
+  return (
+    <>
+        <div className={`w-60 h-80 overflow-hidden group cursor-pointer`}>
+      <div className="image w-full relative">
+      <div className='absolute inset-[25%] flex gap-3 group-hover:opacity-100 opacity-0 transition-opacity'>
+      <a href="" className='bg-white/30 hover:scale-110 transition-all backdrop-blur-sm p-3 h-max rounded-lg flex justify-center items-center'>
+        <RxGithubLogo className='text-3xl text-white' />
+      </a>
+      <a href="" className='bg-white/30 hover:scale-110 transition-all backdrop-blur-sm p-3 h-max rounded-lg flex justify-center items-center'>
+        <RxEyeOpen className='text-3xl text-white font-black' />
+      </a>
+      </div>
+        <img src={pic.src} alt='pic' className='rounded-lg h-36 object-fill w-full'/>
+      </div>
+    <div className={`flex flex-col justify-start items-start gap-1 mt-2`}>  
+        <div className={`flex gap-1 justify-start items-center flex-wrap`}>
+        <div className={`h-4 w-auto rounded-md ${isDarkMode ? "bg-sky-300/20" : "bg-sky-300/40"} p-2.5 flex justify-center items-center`}><p className={`text-sm ${isDarkMode ? "text-sky-300" : "text-sky-500"} font-local`}>redux</p></div></div>
+          <h1 className={`${isDarkMode ? "text-white" : "text-black"} text-3xl font-local font-bold tracking-tight`}>Project Title</h1>
+          <p className={`text-gray-400 text-base font-inter leading-tight text-justify`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae inventore iste delectus aperiam vero sequi! Quisquam aliquam blanditiis quis. </p>
+        </div>
+        </div>
+    </>
+  )
+}
+export {SkillsCard, ProjectsCard};

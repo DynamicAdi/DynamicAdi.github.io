@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useTheme } from '../common/ThemeProvider'
-import Card from '../core/projects/card';
+import {SkillsCard} from '../core/projects/card';
 import demo from "@/public/react.png";
+import Tabs from '../core/projects/upperTabs';
 
 
 
@@ -22,18 +23,12 @@ function Skills() {
   return (
     <div className={`w-full h-full p-2`}>
         {/* Upper Tabs */}
-        <div className="w-full lg:h-12 h-auto flex lg:justify-end lg:items-end justify-start items-start">
-            <div className='w-max h-auto flex lg:gap-3 gap-2 lg:justify-center lg:items-center justify-start items-start lg:pr-8 flex-wrap'>
-              {tabs.map((tabs, index) => (
-                <div onClick={() => handleChange(tabs.name)} className={`${tabs.name===opened ? isDarkMode ? tabs.colorDark : tabs.color : isDarkMode ? "bg-foreground-dark text-white" : "bg-gray-200"} w-max h-auto  rounded-lg text-center p-3 py-1.5 cursor-pointer`} key={index}><p className='font-local font-normal'>{tabs.name}</p></div>
-              ))}
-            </div>
-        </div>
+       <Tabs tabs={tabs} opened={opened} handleChange={handleChange} isDarkMode={isDarkMode}/>
 
     {/* Lower content */}
     <div className="w-full h-[90%]">
-      <Card title='Techinical Skills' name='React.js' imgLink={demo.src}/>
-      <Card title='Dev Tools' name='React.js' imgLink={demo.src}/>
+      <SkillsCard title='Techinical Skills' name='React.js' imgLink={demo.src}/>
+      <SkillsCard title='Dev Tools' name='React.js' imgLink={demo.src}/>
 
     </div>
     </div>

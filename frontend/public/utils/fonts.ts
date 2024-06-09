@@ -1,6 +1,4 @@
 import { Inter, Source_Sans_3, DM_Sans } from "next/font/google";
-import localFont from "next/font/local";
-
 
 
 

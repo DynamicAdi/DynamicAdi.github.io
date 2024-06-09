@@ -6,11 +6,11 @@ import { PiCoffeeLight, PiDatabaseLight, PiBookLight, PiPhoneLight, PiHashLight}
 function Sidepane() {
     const {isDarkMode} = useTheme();
   const tabs = [
-    {name: "Home", color: "bg-orange-400", icon: PiCoffeeLight},
-    {name: "Projects", color: "bg-purple-600", icon: PiDatabaseLight},
-    {name: "Skills", color: "bg-sky-400", icon: PiHashLight},
-    {name: "Blogs", color: "bg-yellow-300", icon: PiBookLight},
-    {name: "Contact", color: "bg-teal-400", icon: PiPhoneLight},
+    {name: "Home", color: "orange-400", icon: PiCoffeeLight},
+    {name: "Projects", color: "purple-600", icon: PiDatabaseLight},
+    {name: "Skills", color: "sky-500", icon: PiHashLight},
+    {name: "Blogs", color: "yellow-300", icon: PiBookLight},
+    {name: "Contact", color: "teal-500", icon: PiPhoneLight},
   ]
   const[opened, setOpen] = useState(tabs[0].name);
     return (
@@ -26,7 +26,7 @@ function Sidepane() {
     <div className="h-1/5 w-full lg:h-[55%] flex lg:flex-col justify-center lg:items-start items-end gap-2 lg:py-0 py-4 px-4 mt-3">
     {
       tabs.map((tab, index) => (
-        <div key={index} onClick={() => setOpen(tab.name)} className={` relative lg:hover:ml-4 cursor-pointer ${opened === tab.name && `${tab.color}`} ${isDarkMode ? "text-white font-light" : "text-black"} transition-all ease-in-out duration-300 lg:py-1 lg:px-4 p-3 rounded-lg lg:w-4/5 w-1/5 lg:text-left text-center lg:text-2xl flex lg:justify-start justify-center items-center lg:gap-2`}><tab.icon className={`lg:text-2xl text-3xl`}/><h3 className={`text-2xl`}><span className='hidden lg:inline'>{tab.name}</span></h3></div>
+        <div key={index} onClick={() => setOpen(tab.name)} className={`relative lg:hover:ml-4 cursor-pointer ${opened === tab.name && `bg-${tab.color}/25 text-${tab.color}`} ${isDarkMode && "text-white"} transition-all ease-in-out duration-300 lg:py-1 lg:px-4 p-3 rounded-lg lg:w-4/5 w-1/5 lg:text-left text-center lg:text-2xl flex lg:justify-start justify-center items-center lg:gap-2`}><tab.icon className={`lg:text-2xl text-3xl`}/><h3 className={`text-2xl`}><span className='hidden lg:inline'>{tab.name}</span></h3></div>
       ))
     }
    </div>
