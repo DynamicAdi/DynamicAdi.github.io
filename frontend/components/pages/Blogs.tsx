@@ -5,9 +5,9 @@ import BlogCard from '../core/blog/card';
 
 function Blogs() {
   const {isDarkMode} = useTheme();
-  const text = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const text = [1, 2, 3, 4, 5]
   return (
-    <div className=''>
+    <div>
     <h1 className={`px-4 font-inter font-bold text-5xl ${isDarkMode ? "text-white" : "text-black"}`}>Blog</h1>
     <div className={`w-full h-[35rem] mt-3 px-2 py-4 flex flex-wrap gap-4 overflow-scroll`}>
       {text.map(() => (

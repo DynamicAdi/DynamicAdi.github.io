@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Tabs from '../core/projects/upperTabs'
 import { useTheme } from '../common/ThemeProvider';
 import { RxExternalLink } from "react-icons/rx";
-import { ProjectsCard } from '../core/projects/card';
+import ProjectCard from '../core/projects/ProjectCard';
 
 
 function Projects() {
@@ -25,10 +25,15 @@ function Projects() {
     <>
     
     <Tabs tabs={tabs} opened={opened} handleChange={handleChange} isDarkMode={isDarkMode}/>
-    <div className={`w-full h-[36rem] mt-3 px-8 overflow-auto flex gap-12 gap-y-10 flex-wrap relative`}>
-    <div className={`fixed bottom-4 left-[50%] w-max h-8 rounded-full ${isDarkMode ? "bg-white/30" : "bg-black/50"} backdrop-blur-sm z-10 text-white cursor-pointer px-4 py-1 hover:scale-110 ease-bounce transition-all`}><a href='' className='font-local font-normal flex justify-center items-center gap-1.5'>View more on behance <RxExternalLink /></a></div>
+    {/* <div className={`w-full h-[36rem] mt-3 px-8 flex gap-12 gap-y-10 flex-wrap relative`}> */}
     
-    <ProjectsCard />
+    {/* <ProjectCard />
+    </div> */}
+    <div className='relative'>
+    <div className={`fixed bottom-6 left-[50%] w-max h-8 rounded-full ${isDarkMode ? "bg-white/30" : "bg-black/50"} backdrop-blur-sm z-10 text-white cursor-pointer px-4 py-1 hover:scale-110 ease-bounce transition-all`}><a href='' className='font-local font-normal flex justify-center items-center gap-1.5'>View more on behance <RxExternalLink /></a></div>
+    <div className={`w-full h-[35rem] mt-3 px-2 pt-12 pb-2 flex flex-wrap gap-10 overflow-scroll`}>
+      <ProjectCard />
+    </div>
     </div>
     </>
   )

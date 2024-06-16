@@ -28,14 +28,6 @@ function ProjectsCard() {
     <>
         <div className={`w-60 h-80 overflow-hidden group cursor-pointer`}>
       <div className="image w-full relative">
-      <div className='absolute inset-[25%] flex gap-3 group-hover:opacity-100 opacity-0 transition-opacity'>
-      <a href="" className='bg-white/30 hover:scale-110 transition-all backdrop-blur-sm p-3 h-max rounded-lg flex justify-center items-center'>
-        <RxGithubLogo className='text-3xl text-white' />
-      </a>
-      <a href="" className='bg-white/30 hover:scale-110 transition-all backdrop-blur-sm p-3 h-max rounded-lg flex justify-center items-center'>
-        <RxEyeOpen className='text-3xl text-white font-black' />
-      </a>
-      </div>
         <img src={pic.src} alt='pic' className='rounded-lg h-36 object-fill w-full'/>
       </div>
     <div className={`flex flex-col justify-start items-start gap-1 mt-2`}>  
@@ -45,6 +37,7 @@ function ProjectsCard() {
           <p className={`text-gray-400 text-base font-inter leading-tight text-justify`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae inventore iste delectus aperiam vero sequi! Quisquam aliquam blanditiis quis. </p>
         </div>
         </div>
+
     </>
   )
 }
