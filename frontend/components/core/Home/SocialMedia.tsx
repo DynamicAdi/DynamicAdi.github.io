@@ -1,6 +1,5 @@
 import React from "react";
 import { useTheme } from "@/components/common/ThemeProvider";
-import { PiTwitterLogo } from "react-icons/pi";
 import { RiTwitterXLine, RiLinkedinFill, RiInstagramLine, RiWhatsappLine, RiGithubFill, RiMailLine } from "react-icons/ri";
 
 function SocialMedia() {
@@ -11,7 +10,7 @@ function SocialMedia() {
     {id: "Github", color: "bg-orange-800", link: "https://github.com/DynamicAdi", Icon: RiGithubFill},
     {id: "Whatsapp", color: "bg-green-500", link: "https://wa.me/+919484025507", Icon: RiWhatsappLine},
     {id: "Instagram", color: "bg-pink-500", link: "https://instagram.com/Tech_versatile", Icon: RiInstagramLine},
-    {id: "Behance", color: "bg-red-500", link: "mailto:adarshpanditdev@gmail.com", Icon: RiMailLine},
+    {id: "Gmail", color: "bg-red-500", link: "mailto:adarshpanditdev@gmail.com", Icon: RiMailLine},
   ]
   return (
     <div className={`w-full h-full`}>
