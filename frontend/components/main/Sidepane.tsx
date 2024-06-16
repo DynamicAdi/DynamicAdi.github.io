@@ -26,7 +26,7 @@ function Sidepane() {
     <div className="h-1/5 w-full lg:h-[55%] flex lg:flex-col justify-center lg:items-start items-end gap-2 lg:py-0 py-4 px-4 mt-3">
     {
       tabs.map((tab, index) => (
-        <div key={index} onClick={() => setOpen(tab.name)} className={`relative lg:hover:ml-4 cursor-pointer ${opened === tab.name && `bg-${tab.color}/25 text-${tab.color}`} ${isDarkMode && "text-white"} transition-all ease-in-out duration-300 lg:py-1 lg:px-4 p-3 rounded-lg lg:w-4/5 w-1/5 lg:text-left text-center lg:text-2xl flex lg:justify-start justify-center items-center lg:gap-2`}><tab.icon className={`lg:text-2xl text-3xl`}/><h3 className={`text-2xl`}><span className='hidden lg:inline'>{tab.name}</span></h3></div>
+        <div key={index} onClick={() => setOpen(tab.name)} className={`relative lg:hover:ml-4 cursor-pointer ${opened === tab.name && `bg-${tab.color}/25 text-${tab.color} `} ${isDarkMode && "text-white"} transition-all ease-in-out duration-300 lg:py-1 lg:px-4 p-3 rounded-lg lg:w-4/5 w-1/5 lg:text-left text-center lg:text-2xl flex lg:justify-start justify-center items-center lg:gap-2`}><tab.icon className={`lg:text-2xl text-3xl`}/><h3 className={`text-2xl`}><span className='hidden lg:inline'>{tab.name}</span></h3></div>
       ))
     }
    </div>

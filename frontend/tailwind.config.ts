@@ -16,6 +16,7 @@ const config: Config = {
         'dark': 'rgb(8, 8, 8)',
         'upper-dark': 'rgb(20, 20, 20)',
         'foreground-dark': 'rgb(33, 33, 33)',
+        'fore-upper': 'rgb(43, 43, 43)',
         // 'foreground-dark': 'rgb(255, 255, 255)',
       },
       fontFamily: {
