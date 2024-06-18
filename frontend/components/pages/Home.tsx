@@ -7,6 +7,7 @@ import Testmonials from "../core/Home/Testmonials";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { Quotes } from "../core/Home/quotes";
 import SocialMedia from "../core/Home/SocialMedia";
+import Loader from "../common/Loader";
 
 function Home() {
   const { isDarkMode } = useTheme();
@@ -38,7 +39,10 @@ function Home() {
                 >
                   <h2>Random Quotes</h2>
                 </div>
-                {loading ? (<h1>Loading...</h1>) : (<>
+                {loading ? (
+                  <h1 className="font-inter font-bold text-center text-3xl">Loading...</h1>
+                  
+                  ) : (<>
                 <div
                   className={`flex gap-1 ${
                     isDarkMode ? "text-white" : "text-black"

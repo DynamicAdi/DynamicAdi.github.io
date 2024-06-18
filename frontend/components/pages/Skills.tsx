@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useTheme } from '../common/ThemeProvider'
-import {SkillsCard} from '../core/projects/card';
+import {SkillsCard} from '../core/skills/card';
 import demo from "@/public/react.png";
 import Tabs from '../core/projects/upperTabs';
 
