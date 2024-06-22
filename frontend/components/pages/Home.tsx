@@ -1,17 +1,16 @@
 import React from "react";
 import { useTheme } from "../common/ThemeProvider";
-import { PiDownloadLight, PiEyesLight } from "react-icons/pi";
+import { PiDownloadLight } from "react-icons/pi";
 import Boxes from "../core/Home/boxes";
 import About from "../core/Home/About";
 import Testmonials from "../core/Home/Testmonials";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { Quotes } from "../core/Home/quotes";
 import SocialMedia from "../core/Home/SocialMedia";
-import Loader from "../common/Loader";
+
 
 function Home() {
   const { isDarkMode } = useTheme();
-  // const quote = Quotes();
   const {quote, author, loading} = Quotes();
   return (
     <div className="w-full h-full rounded-2xl flex flex-col justify-between py-2 px-2 gap-3">

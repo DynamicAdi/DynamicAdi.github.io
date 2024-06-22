@@ -42,11 +42,6 @@ const displayTabs:any = () => {
 }
   return (
     <div className={`rounded-3xl w-full h-full ${isDarkMode ? "dark:bg-upper-dark" : "bg-upper-light"} p-2`}>
-      {/* <Home />
-      {/* <Skills />
-      <Projects />
-      <Blogs />
-      <ContactForm /> */}
       {displayTabs()}
     </div>
   )
