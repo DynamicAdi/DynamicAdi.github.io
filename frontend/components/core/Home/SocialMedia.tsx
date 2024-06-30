@@ -16,7 +16,7 @@ function SocialMedia() {
     <div className={`w-full h-full`}>
       <ul className={`list-none flex flex-nowrap gap-2 h-full w-full`}>
         {social.map((tab, index:number) => (
-    <a href={`${tab.link}`} target="_blank" rel="noopener noreferrer" className={`h-full w-1/6 rounded-2xl ${
+    <a key={index} href={`${tab.link}`} target="_blank" rel="noopener noreferrer" className={`h-full w-1/6 rounded-2xl ${
       isDarkMode ? "bg-foreground-dark" : "bg-gray-300"
     } flex justify-center items-center active:scale-50 hover:${tab.color} transition-all ease-bounce group`}>
           <li>

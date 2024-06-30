@@ -18,7 +18,7 @@ function Testmonials() {
 
     return (
     <div
-    className={`lg:w-2/4 w-full lg:h-full h-[30rem] p-3 ${
+    className={`lg:w-2/4 w-full lg:h-full h-max p-3 ${
       isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
     }  rounded-2xl overflow-hidden relative`}>
 
@@ -30,7 +30,7 @@ function Testmonials() {
             <div className="w-full h-full">
            <div className={`flex justify-start items-center w-full h-1/4 p-2 px-0 gap-2`}>
             <div className={`w-12 h-12 rounded-full bg-center`}>
-              <img src="https://source.unsplash.com/smiling-woman-wearing-white-and-black-pinstriped-collared-top-QXevDflbl8A" alt="icon" className="w-full h-full bg-center rounded-full object-cover" />
+              <img src="https://source.unsplash.com/a-person-walking-on-a-beach-at-sunset-7ZNp0Buodlc" alt="icon" className="w-full h-full bg-center rounded-full object-cover" />
             </div>
             <div className={`h-full w-1/2`}>
               <h1 className={`font-local font-bold text-2xl leading-7 ${isDarkMode ? "dark:text-white": "text-black"}`}>John Doe</h1>

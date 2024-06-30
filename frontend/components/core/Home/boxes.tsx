@@ -8,7 +8,7 @@ export default function Boxes() {
         className={`flex lg:w-[45%] w-full h-1/2 lg:h-full flex-wrap lg:gap-3 gap-2 justify-center items-center `}
       >
         <div
-          className={`flex rounded-xl flex-col justify-center items-center p-3 w-[48%] h-[48%] bg-gradient-to-br from-orange-500 from-20% to-black/90 to-95% `}
+          className={`flex rounded-xl flex-col justify-center items-center p-3 w-[48%] h-[10rem] bg-gradient-to-br from-orange-500 from-20% to-black/90 to-95% `}
         >
           <h1 className={`font-inter font-extrabold text-4xl lg:text-5xl text-white`}>
             5 Years
@@ -18,7 +18,7 @@ export default function Boxes() {
           </h3>
         </div>
         <div
-          className={`flex rounded-xl w-[48%] h-[48%] 
+          className={`flex rounded-xl w-[48%] h-[10rem] 
             flex-col justify-center items-center bg-gradient-to-br from-purple-700 from-20% to-black/90 to-95%
              `}
         >
@@ -30,7 +30,7 @@ export default function Boxes() {
           </h3>
         </div>
         <div
-          className={`flex rounded-xl w-[48%] h-[48%] flex-col justify-center items-center bg-gradient-to-br from-green-500 from-20% to-black/90 to-95%`}
+          className={`flex rounded-xl w-[48%] h-[10rem] flex-col justify-center items-center bg-gradient-to-br from-green-500 from-20% to-black/90 to-95%`}
         >
           <h1 className={`font-inter font-extrabold text-4xl lg:text-5xl text-white`}>
             10+
@@ -40,7 +40,7 @@ export default function Boxes() {
           </h3>
         </div>
         <div
-          className={`flex rounded-xl w-[48%] h-[48%] flex-col justify-center items-center bg-gradient-to-br from-yellow-500 from-20% to-black/90 to-95% `}
+          className={`flex rounded-xl w-[48%] h-[10rem] flex-col justify-center items-center bg-gradient-to-br from-yellow-500 from-20% to-black/90 to-95% `}
         >
           <h1 className={`font-inter font-extrabold text-4xl lg:text-5xl text-white`}>
             30+

@@ -11,9 +11,10 @@ export default {
         },
         {
             name: 'content',
-            type: 'string',
+            type: 'richtext',
             title: 'Content',
         }, 
+
         {
             title: 'Published At',
             name: 'PublishedAt',

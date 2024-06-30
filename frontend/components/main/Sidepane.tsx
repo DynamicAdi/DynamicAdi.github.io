@@ -8,15 +8,15 @@ function Sidepane({opened, setOpen, color, setColor, tabs}: {
     color: string,
     setColor: React.Dispatch<React.SetStateAction<string>>,
     tabs: {name: string, color: string, icon: any}[]
-}) {
+}) { 
     const {isDarkMode} = useTheme();
 
     return (
-    <div className={`lg:w-1/4 w-full md:h-1/3 h-3/5 lg:h-[87%] ${isDarkMode ? "dark:bg-upper-dark" : "bg-white"} rounded-3xl relative items-center justify-end flex flex-col`}>
-        <div className="md:w-2/5 md:h-3/4 w-3/4 lg:h-2/5 h-[55%] lg:w-4/5 overflow-hidden absolute md:-top-16 -top-5 lg:-top-20 rounded-2xl bg-cover">
-          <img src={image.src} alt={"This is me!"} className='w-full h-full rounded-2xl object-cover bg-center' />
+    <div className={`lg:w-1/4 w-full h-[25rem] lg:h-[87%] ${isDarkMode ? "dark:bg-upper-dark" : "bg-white"} rounded-3xl relative items-center justify-end flex flex-col`}>
+        <div className="w-3/4 lg:h-[40%] h-[60%] md:w-1/2 lg:w-4/5 overflow-hidden absolute  -top-5 lg:-top-20 rounded-2xl">
+          <img src={image.src} alt={"This is me!"} className='w-full h-full object-cover rounded-2xl bg-top' />
         </div>
-      <div className="w-full h-[28%]"></div>
+      {/* <div className="w-full h-[28%]"></div> */}
     <div className="px-4">
       <h1 className={`font-source font-extrabold leading-none text-[2rem] ${isDarkMode ? "dark:text-white" : "text-black"}`}>Dev Adarsh Pandit</h1>
       <p className={`font-inter text-gray-500 text-base leading-none`}>The Boundary Fire was a 2017 wildfire in Arizona that burned 17,788 acres</p>
