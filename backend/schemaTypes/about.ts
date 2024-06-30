@@ -12,7 +12,7 @@ export const aboutSchema = defineType({
       type: 'string',
     },
     {
-        name: "skills",
+        name: "miniDesc",
         title: "skill Desc",
         type: "string",
     },

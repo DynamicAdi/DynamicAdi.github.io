@@ -64,7 +64,7 @@ function Home() {
                   ? "text-white bg-foreground-dark"
                   : "text-black bg-gray-300"
               }`}>
-              <PiDownloadLight className={`text-3xl`} />
+              <PiDownloadLight className={`text-4xl`} />
               <h2 className={`font-source font-medium text-2xl `}>
                 Download CV
               </h2>

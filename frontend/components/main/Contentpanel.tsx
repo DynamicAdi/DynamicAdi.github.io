@@ -41,7 +41,7 @@ const displayTabs:any = () => {
 
 }
   return (
-    <div className={`rounded-3xl w-full lg:h-full h-max ${isDarkMode ? "dark:bg-upper-dark" : "bg-upper-light"} p-2`}>
+    <div className={`rounded-3xl w-full lg:h-full h-full ${isDarkMode ? "dark:bg-upper-dark" : "bg-upper-light"} p-2`}>
       {displayTabs()}
     </div>
   )

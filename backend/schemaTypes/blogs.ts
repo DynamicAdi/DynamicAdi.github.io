@@ -10,9 +10,29 @@ export default {
             validation: (Rule:any) => Rule.required(),
         },
         {
-            name: 'content',
-            type: 'richtext',
-            title: 'Content',
+            name: 'description',
+            title: 'Description',
+            type: 'string',
+            validation: (Rule:any) => Rule.required(),
+        }, 
+        {
+            name: "image",
+            title: 'Front Image',
+            type: 'image',
+        },
+        {
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+                source: 'title',
+                maxLength: 30,
+            },
+        },
+        {
+            name: 'author',
+            title: 'author',
+            type: 'string',
         }, 
 
         {
@@ -20,7 +40,7 @@ export default {
             name: 'PublishedAt',
             type: 'datetime',
             options: {
-                dateFormat: 'YYYY-MM-DD',
+                dateFormat: 'MM-DD-YYYY',
                 timeFormat: 'HH:mm',
             }
         }
