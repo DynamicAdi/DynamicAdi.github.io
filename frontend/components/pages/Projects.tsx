@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
 import Tabs from '../core/projects/upperTabs'
 import { useTheme } from '../common/ThemeProvider';
-import { RxExternalLink } from "react-icons/rx";
 import ProjectCard from '../core/projects/ProjectCard';
 
 
 function Projects() {
     const {isDarkMode} = useTheme();
     const tabs = [
-        {name: 'Development', colorDark: "bg-purple-300", color: 'bg-purple-300'},
-        {name: 'UI/UX', colorDark: "bg-blue-300", color: 'bg-blue-200'},
-        {name: '3D Models', colorDark: "bg-yellow-300", color: 'bg-yellow-200'},
-        {name: 'Animations', colorDark: "bg-orange-300", color: 'bg-orange-200'},
-        {name: 'Graphic Design', colorDark: "bg-green-300", color: 'bg-green-200'},
+        {name: 'Development', colorDark: "bg-purple-400/30", text: "text-purple-500"},
+        {name: 'UI/UX', colorDark: "bg-blue-400/30", text: "text-blue-500"},
+        {name: '3D Models', colorDark: "bg-yellow-400/30", text: "text-yellow-500"},
+        {name: 'Animations', colorDark: "bg-orange-400/30", text: "text-orange-500"},
+        {name: 'Graphic Design', colorDark: "bg-green-400/30", text: "text-green-500"},
       ]
       const [opened, setOpened] = useState(tabs[0].name);
 
@@ -25,14 +24,12 @@ function Projects() {
     <>
     
     <Tabs tabs={tabs} opened={opened} handleChange={handleChange} isDarkMode={isDarkMode}/>
-    {/* <div className={`w-full h-[36rem] mt-3 px-8 flex gap-12 gap-y-10 flex-wrap relative`}> */}
     
-    {/* <ProjectCard />
-    </div> */}
     <div className='relative'>
-    <div className={`fixed bottom-6 left-[50%] w-max h-8 rounded-full ${isDarkMode ? "bg-white/30" : "bg-black/50"} backdrop-blur-sm z-10 text-white cursor-pointer px-4 py-1 hover:scale-110 ease-bounce transition-all`}><a href='' className='font-local font-normal flex justify-center items-center gap-1.5'>View more on behance <RxExternalLink /></a></div>
-    <div className={`w-full h-[35rem] mt-3 px-2 pt-12 pb-2 flex flex-wrap gap-10 overflow-scroll`}>
+   <div className={`w-full h-[35rem] mt-3 px-2 pt-12 pb-2 flex flex-wrap gap-10 gap-y-16 overflow-scroll`}>
       <ProjectCard />
+      <ProjectCard />
+      
     </div>
     </div>
     </>

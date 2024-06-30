@@ -9,11 +9,11 @@ import Tabs from '../core/projects/upperTabs';
 function Skills() {
   const {isDarkMode} = useTheme();
   const tabs = [
-    {name: 'Development', colorDark: "bg-purple-300", color: 'bg-purple-300'},
-    {name: 'Design', colorDark: "bg-blue-300", color: 'bg-blue-200'},
-    {name: '3D Models', colorDark: "bg-green-300", color: 'bg-green-200'},
-    {name: 'Animations', colorDark: "bg-orange-300", color: 'bg-orange-200'},
-    {name: 'communication', colorDark: "bg-yellow-300", color: 'bg-yellow-200'},
+    {name: 'Development', colorDark: "bg-purple-400/30", text: "text-purple-500"},
+    {name: 'UI/UX', colorDark: "bg-blue-400/30", text: "text-blue-500"},
+    {name: '3D Models', colorDark: "bg-yellow-400/30", text: "text-yellow-500"},
+    {name: 'Animations', colorDark: "bg-orange-400/30", text: "text-orange-500"},
+    {name: 'Graphic Design', colorDark: "bg-green-400/30", text: "text-green-500"},
   ]
   const [opened, setOpened] = useState(tabs[0].name);
 
@@ -28,7 +28,6 @@ function Skills() {
     {/* Lower content */}
     <div className="w-full h-[90%]">
       <SkillsCard title='Techinical Skills' name='React.js' imgLink={demo.src}/>
-      <SkillsCard title='Dev Tools' name='React.js' imgLink={demo.src}/>
 
     </div>
     </div>
