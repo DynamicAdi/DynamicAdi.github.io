@@ -39,7 +39,7 @@ function Tabs({
                     : `${tabs.text} ${tabs.colorDark}`
                   : isDarkMode
                   ? "bg-foreground-dark text-white"
-                  : "bg-gray-200"
+                  : "bg-gray-200/70"
               } w-max h-auto hover:scale-90 ease-bounce transition-all rounded-lg text-center p-2 py-1.5 cursor-pointer`}
               key={index}
             >
@@ -48,7 +48,7 @@ function Tabs({
                   tabs.name === opened ? "font-medium" : "font-normal"
                 }`}
               >
-                {tabs.name}
+                {tabs.name} - 00
               </p>
             </div>
           ))}

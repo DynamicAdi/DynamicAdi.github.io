@@ -24,14 +24,14 @@ function Home() {
       <div className={`flex w-full lg:h-[45%] gap-3 lg:flex-row flex-col-reverse`}>
         <Testmonials />
         <div className={`lg:w-2/3 w-full flex flex-col gap-3 `}>
-        <div className={`w-full lg:h-1/2 h-[5rem]`}>
+        <div className={`w-full lg:h-2/5 h-[9rem]`}>
           <SocialMedia />
         </div>
         <div className={`w-full lg:h-[12rem] h-full flex gap-3 lg:justify-normal justify-between  flex-col lg:flex-row`}>
           <div className={`lg:w-3/4 w-full lg:h-full`}>
           <div
                 className={`w-full lg:h-full h- ${
-                  isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
+                  isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-200"
                 } rounded-2xl relative overflow-hidden px-3 p-8 pb-2`}
               >
                 <div
@@ -62,10 +62,10 @@ function Home() {
           <div className={`lg:w-1/4 w-full lg:h-full h-[8rem] cursor-pointer hover:text-white active:scale-75 transition-all hover:bg-green-500 rounded-xl flex flex-col justify-center items-center ${
                 isDarkMode
                   ? "text-white bg-foreground-dark"
-                  : "text-black bg-gray-300"
+                  : "text-black bg-gray-200"
               }`}>
               <PiDownloadLight className={`text-4xl`} />
-              <h2 className={`font-source font-medium text-2xl `}>
+              <h2 className={`font-source font-medium text-xl `}>
                 Download CV
               </h2>
           </div>

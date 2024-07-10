@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div
       className={`flex lg:w-[55%] w-full lg:h-full h-1/2 rounded-2xl ${
-        isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
+        isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-200"
       } relative lg:overflow-hidden overflow-auto p-3 pb-6 lg:pb-3`}
     >
 

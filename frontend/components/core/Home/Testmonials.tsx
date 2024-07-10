@@ -19,7 +19,7 @@ function Testmonials() {
     return (
     <div
     className={`lg:w-2/4 w-full lg:h-full h-max p-3 ${
-      isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-300"
+      isDarkMode ? "dark:bg-foreground-dark" : "bg-gray-200"
     }  rounded-2xl overflow-hidden relative`}>
 
     <div className={`absolute right-0 top-0 z-10 ${isDarkMode ? "bg-white text-black font-semibold" : "bg-black text-white "} cursor-pointer px-3 text-base font-source font-normal flex justify-center items-center gap-1 rounded-bl-xl`}> <h2>Add yours</h2><PiPlusBold /></div>
